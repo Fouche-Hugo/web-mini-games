@@ -1,0 +1,15 @@
+@for $i from 1 to 17 {
+    .game-container .box-item.position#{$i} {
+        grid-area: pos#{$i};
+    }
+}
+
+.game-container .box-item {
+    background-color: $backgound-color-box-item;
+    border-radius: 15px;
+    color: $text-color;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}

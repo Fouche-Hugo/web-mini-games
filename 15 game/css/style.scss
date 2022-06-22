@@ -1,0 +1,84 @@
+$text-color: #f7f5ee;
+$background-color-header: #81A3B1;
+$border-color-box: #81A3B1;
+$backgound-color-box-item: #59B1C5;
+$background-color-footer: #15353C;
+
+@import 'box', 'box-item';
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    background: $text-color;
+}
+
+header {
+    background-color: $background-color-header;
+    color: $text-color;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: min(60rem - 10px, 95% - 10px);
+    margin: 15px auto;
+
+    padding: 10px;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 0;
+
+        @media screen and (max-width: 400px) {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+#game-container {
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        color: $background-color-footer;
+    }
+}
+
+footer {
+    background: $background-color-footer;
+    color: $text-color;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    text-align: center;
+
+    width: 100%;
+
+    padding: 0.8rem 0;
+}

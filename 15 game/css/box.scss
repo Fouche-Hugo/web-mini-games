@@ -1,0 +1,20 @@
+.game-container {
+    width: min(60rem, 95%);
+    border: 2px solid $border-color-box;
+
+    padding: 5px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+
+    grid-template-areas:
+        "pos1 pos2 pos3 pos4"
+        "pos5 pos6 pos7 pos8"
+        "pos9 pos10 pos11 pos12"
+        "pos13 pos14 pos15 pos16";
+
+    user-select: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15 Game - by FOUCHÉ Hugo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+            <div>
+                <span>Time : </span><span id="current-time"></span>
+            </div>
+            <h1>15 Game</h1>
+            <div>
+                <span>Reroll</span>
+            </div>
+    </header>
+
+    <div id="game-container">
+        <box amount="15" @game-not-finished="actualiseMessagePartieEnCours" @game-finished="actualiseMessagePartieTerminee"></box>
+        <p>{{message}}</p>
+    </div>
+
+    <footer>
+        <div>
+            <span>by FOUCHÉ Hugo - 2022</span><br>
+        </div>
+    </footer>
+
+    <!--Import Vue Js 3 with unpkg-->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
