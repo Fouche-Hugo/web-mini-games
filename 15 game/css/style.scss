@@ -1,8 +1,12 @@
 $text-color: #f7f5ee;
 $background-color-header: #81A3B1;
 $border-color-box: #81A3B1;
+$border-color-box-win: #6FD08C;
 $backgound-color-box-item: #59B1C5;
+$backgound-color-box-item-win: #31C442;
 $background-color-footer: #15353C;
+$color-reroll-button: #493657;
+$color-reroll-button-hover: #050505;
 
 @import 'box', 'box-item';
 
@@ -56,6 +60,24 @@ header {
         @media screen and (max-width: 400px) {
             font-size: 1.5rem;
             line-height: 1.5rem;
+        }
+    }
+
+    .reroll-button {
+        padding: 0.3em;
+
+        color: $color-reroll-button;
+        background-color: $text-color;
+
+        border: 2px solid $color-reroll-button;
+        border-radius: 1em;
+
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            color: $color-reroll-button-hover;
+            border-color: $color-reroll-button-hover;
         }
     }
 }

@@ -11,16 +11,17 @@
 
     <header>
             <div>
-                <span>Time : </span><span id="current-time"></span>
+                <span>Time : {{timer}} s</span><span id="current-time"></span>
             </div>
             <h1>15 Game</h1>
-            <div>
+            <div class="reroll-button" @click="reroll">
                 <span>Reroll</span>
             </div>
     </header>
 
     <div id="game-container">
-        <box amount="15" @game-not-finished="actualiseMessagePartieEnCours" @game-finished="actualiseMessagePartieTerminee"></box>
+        <box amount="15" @game-not-finished="actualiseMessagePartieEnCours" @game-finished="actualiseMessagePartieTerminee" @game-reset="actualiseMessagePartieReset"
+            @timer-update="actualiseTimer" ref="game"></box>
         <p>{{message}}</p>
     </div>
 

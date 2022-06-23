@@ -12,4 +12,8 @@
     text-align: center;
     line-height: 100px;
     cursor: pointer;
+
+    &.win {
+        background-color: $backgound-color-box-item-win;
+    }
 }

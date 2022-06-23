@@ -13,6 +13,9 @@
       -ms-user-select: none;
           user-select: none;
 }
+.game-container.win {
+  border-color: #6FD08C;
+}
 
 .game-container .box-item.position1 {
   grid-area: pos1;
@@ -87,6 +90,9 @@
   line-height: 100px;
   cursor: pointer;
 }
+.game-container .box-item.win {
+  background-color: #31C442;
+}
 
 html {
   padding: 0;
@@ -133,6 +139,22 @@ header h1 {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+}
+header .reroll-button {
+  padding: 0.3em;
+  color: #493657;
+  background-color: #f7f5ee;
+  border: 2px solid #493657;
+  border-radius: 1em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+header .reroll-button:hover {
+  color: #050505;
+  border-color: #050505;
 }
 
 #game-container p {

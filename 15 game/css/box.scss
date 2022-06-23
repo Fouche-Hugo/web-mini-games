@@ -17,4 +17,8 @@
         "pos13 pos14 pos15 pos16";
 
     user-select: none;
+
+    &.win {
+        border-color: $border-color-box-win;
+    }
 }
